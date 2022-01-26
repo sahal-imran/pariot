@@ -1,16 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Patrick+Hand&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
+}
+#navLink{
+  text-decoration: none;
+  color: #8157c1;
+}
+#nav-Link,.nav-link{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.75;
+  font-family: 'Balsamiq Sans', cursive;
+  letter-spacing: 0.02857em;
+  font-weight: 500;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.nav-link-social{
+  color:#f87171
+}
+.active{
+  color:#f87171
+}
+.twitter{
+  font-size: 20px;
+  color: #f87171;
+  border-radius: 50%;
+  border: 1px solid #f87171;
+}
+.twitter:hover{
+  background-color: white;
+  color: white;
+}
+.css-7cyylc-MuiPaper-root-MuiAccordion-root:last-of-type {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.css-7cyylc-MuiPaper-root-MuiAccordion-root:first-of-type {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.css-k02l5k-MuiPaper-root-MuiAccordion-root:first-of-type {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.css-4gb6g6-MuiPaper-root-MuiAccordion-root:before{
+  background-color: #d3c8fd;
 }
