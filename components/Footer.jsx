@@ -1,12 +1,8 @@
-import Container from '@mui/material/Container';
 import { Box } from '@mui/system';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Typography from "@mui/material/Typography";
 import Button from '@mui/material/Button';
-import ReadMoreIcon from '@mui/icons-material/ReadMore';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import { Fade } from "react-reveal";
-import Zoom from 'react-reveal/Zoom';
 import Link from '@mui/material/Link';
 import { FiArrowUpRight } from "react-icons/Fi";
 import Grid from '@mui/material/Grid';

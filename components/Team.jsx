@@ -19,8 +19,7 @@ function Team() {
         boxShadow: 'none'
     }));
 
-    return <>
-        <Box component="div" sx={{ width: "100%", background: "#6d28d9" }} >
+    return <Box component="div" sx={{ width: "100%", background: "#6d28d9" }} >
             <Container
                 id='TEAM'
                 component="div"
@@ -93,8 +92,6 @@ function Team() {
                 </Fade>
             </Container>
         </Box>
-
-    </>
 }
 
 export default Team;

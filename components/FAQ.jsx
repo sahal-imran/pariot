@@ -9,8 +9,7 @@ import { Fade } from "react-reveal";
 import Zoom from 'react-reveal/Zoom';
 
 function FAQ() {
-    return <>
-        <Container
+    return <Container
             id='FAQ'
             component="div"
             maxWidth="fluid"
@@ -76,7 +75,6 @@ function FAQ() {
             </Fade>
 
         </Container>
-    </>
 }
 
 export default FAQ;

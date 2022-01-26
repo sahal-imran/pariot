@@ -19,8 +19,7 @@ function Partners() {
         height: "100%"
     }));
 
-    return <>
-        <Box component="div" sx={{ width: "100%", background: "#6d28d9", minHeight: '100vh' }} >
+    return <Box component="div" sx={{ width: "100%", background: "#6d28d9", minHeight: '100vh' }} >
             <Container
                 id={'PARTNER'}
                 component="div"
@@ -62,7 +61,6 @@ function Partners() {
                 </Fade>
             </Container>
         </Box>
-    </>
 }
 
 export default Partners;

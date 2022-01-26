@@ -7,7 +7,7 @@ function ArtGallery() {
     const child = { width: `15em`, height: `15em`, borderRadius: "30px", margin: "0px 15px" };
     const parent = { width: `100%`, height: `30vh` };
 
-    return <>
+    return <Box>
         <Box component="div" sx={{ mt:-12,transition:"all 0.3s ease",transform:"skew(0deg,175deg)" }} >
             <Fade right cascade>
                 <Box component="div" sx={{ mb: 3 }} style={parent}>
@@ -46,7 +46,7 @@ function ArtGallery() {
                 </Box>
             </Fade>
         </Box>
-    </>
+    </Box>
 }
 
 export default ArtGallery;

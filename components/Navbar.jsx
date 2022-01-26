@@ -100,7 +100,7 @@ function Navbar() {
                             to={'PARTNER'}
                             spy={true}
                             activeClass={"active"}
-                            smooth={500}
+                            smooth={true}
                         >
                             Partners
                         </Link>
@@ -113,7 +113,7 @@ function Navbar() {
                             to={'FAQ'}
                             spy={true}
                             activeClass={"active"}
-                            smooth={500}
+                            smooth={true}
                         >
                             FAQ 
                         </Link>
@@ -126,7 +126,7 @@ function Navbar() {
                             to={'roadmap'}
                             spy={true}
                             activeClass={"active"}
-                            smooth={500}
+                            smooth={true}
                         >
                             Roadmap
                         </Link>
@@ -139,7 +139,7 @@ function Navbar() {
                             to={'TEAM'}
                             spy={true}
                             activeClass={"active"}
-                            smooth={500}
+                            smooth={true}
                         >
                             Team
                         </Link>
