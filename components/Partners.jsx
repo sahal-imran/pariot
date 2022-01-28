@@ -6,6 +6,7 @@ import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import { Fade } from "react-reveal";
 import Zoom from 'react-reveal/Zoom';
+import Image from 'next/image';
 
 function Partners() {
 
@@ -46,12 +47,18 @@ function Partners() {
                 </Zoom>
                 <Fade bottom cascade>
                     <Box sx={{ width: '100%', display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Grid container rowSpacing={10} columnSpacing={{ xs: 10 }} columns={{ xs: 1, sm: 2, md: 5 }} >
+                        <Grid container rowSpacing={14} columnSpacing={{ xs: 14 }} columns={{ xs: 1, sm: 2, md: 5 }} >
                             {
                                 PartnerData.map((data) => {
                                     return <Grid key={data.id} item xs={1}>
                                         <Item sx={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
-                                            <img style={{ width: "80%" }} src={data.imgURL} alt="Member" />
+                                            {/* <img style={{ width: "80%" }} src={data.imgURL} alt="Member" /> */}
+                                            <Image src={data.imgURL}
+                                                width={400}
+                                                height={300}
+                                                objectFit='contain'
+                                                alt='Partners'
+                                            />
                                         </Item>
                                     </Grid>
                                 })
@@ -69,42 +76,42 @@ export default Partners;
 const PartnerData = [
     {
         id: 1,
-        imgURL: "img/partner/partner1.png",
+        imgURL: "/img/partner/partner1.png",
     },
     {
         id: 2,
-        imgURL: "img/partner/partner2.png",
+        imgURL: "/img/partner/partner2.png",
     },
     {
         id: 3,
-        imgURL: "img/partner/partner4.png",
+        imgURL: "/img/partner/partner4.png",
     },
     {
         id: 4,
-        imgURL: "img/partner/partner7.png",
+        imgURL: "/img/partner/partner7.png",
     },
     {
         id: 5,
-        imgURL: "img/partner/partner6.png",
+        imgURL: "/img/partner/partner6.png",
     },
     {
         id: 6,
-        imgURL: "img/partner/partner8.png",
+        imgURL: "/img/partner/partner8.png",
     },
     {
         id: 7,
-        imgURL: "img/partner/partner1.png",
+        imgURL: "/img/partner/partner1.png",
     },
     {
         id: 8,
-        imgURL: "img/partner/partner2.png",
+        imgURL: "/img/partner/partner2.png",
     },
     {
         id: 9,
-        imgURL: "img/partner/partner4.png",
+        imgURL: "/img/partner/partner4.png",
     },
     {
         id: 10,
-        imgURL: "img/partner/partner7.png",
+        imgURL: "/img/partner/partner7.png",
     },
 ]

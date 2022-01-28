@@ -4,10 +4,10 @@ import Typography from "@mui/material/Typography";
 import Button from '@mui/material/Button';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Link from '@mui/material/Link';
-import { FiArrowUpRight } from "react-icons/Fi";
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
+import NorthEastIcon from '@mui/icons-material/NorthEast';
 
 function Footer() {
 
@@ -74,35 +74,35 @@ function Footer() {
                             <Grid item xs={1}>
                                 <Item>
                                     <Link sx={{ display: "flex", justifyContent: 'center', alignItems: "center",color: 'white', fontSize: "22px", fontFamily: "'Balsamiq Sans', cursive" }} href="#" underline="none">
-                                        Discord<FiArrowUpRight size={20} />
+                                        Discord<NorthEastIcon size={20} />
                                     </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1}>
                                 <Item>
                                     <Link sx={{ display: "flex", justifyContent: 'center', alignItems: "center",color: 'white', fontSize: "22px", fontFamily: "'Balsamiq Sans', cursive" }} href="#" underline="none">
-                                        Twitter<FiArrowUpRight size={20} />
+                                        Twitter<NorthEastIcon size={20} />
                                     </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1}>
                                 <Item>
                                     <Link sx={{ display: "flex", justifyContent: 'center', alignItems: "center",color: 'white', fontSize: "22px", fontFamily: "'Balsamiq Sans', cursive" }} href="#" underline="none">
-                                        Instagram<FiArrowUpRight size={20} />
+                                        Instagram<NorthEastIcon size={20} />
                                     </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1}>
                                 <Item>
                                     <Link sx={{ display: "flex", justifyContent: 'center', alignItems: "center",color: 'white', fontSize: "22px", fontFamily: "'Balsamiq Sans', cursive" }} href="#" underline="none">
-                                        Medium<FiArrowUpRight size={20} />
+                                        Medium<NorthEastIcon size={20} />
                                     </Link>
                                 </Item>
                             </Grid>
                             <Grid item xs={1}>
                                 <Item>
                                     <Link sx={{ display: "flex", justifyContent: 'center', alignItems: "center",color: 'white', fontSize: "22px", fontFamily: "'Balsamiq Sans', cursive" }} href="#" underline="none">
-                                        Email<FiArrowUpRight size={20} />
+                                        Email<NorthEastIcon size={20} />
                                     </Link>
                                 </Item>
                             </Grid>

@@ -1,14 +1,15 @@
 import HorizontalScroll from 'react-scroll-horizontal';
 import { Box } from '@mui/system';
 import { Fade } from "react-reveal";
+import Image from 'next/image';
 
 function ArtGallery() {
 
-    const child = { width: `15em`, height: `15em`, borderRadius: "30px", margin: "0px 15px" };
-    const parent = { width: `100%`, height: `30vh` };
+    // const child = { width: `15em`, height: `15em`, borderRadius: "30px", margin: "0px 15px" };
+    const parent = { width: `100%`, height: `40vh` };
 
     return <Box>
-        <Box component="div" sx={{ mt:-12,transition:"all 0.3s ease",transform:"skew(0deg,175deg)" }} >
+        <Box component="div" sx={{ mt: -12, transition: "all 0.3s ease", transform: "skew(0deg,175deg)" }} >
             <Fade right cascade>
                 <Box component="div" sx={{ mb: 3 }} style={parent}>
                     <HorizontalScroll
@@ -20,7 +21,15 @@ function ArtGallery() {
                         {
                             ImgURL.map((data) => {
                                 return <Box key={data.id} component="div" >
-                                    <img style={child} src={data.URL} alt="" />
+                                    <Box sx={{ width: `15em`, height: `15em`, borderRadius: "30px", overflow: 'hidden', margin: "0px 15px" }} >
+                                        <Image src={data.URL}
+                                            width={400}
+                                            height={400}
+                                            objectFit='contain'
+                                            alt='arts'
+                                        />
+                                    </Box>
+                                    {/* <img style={child} src={data.URL} alt="" /> */}
                                 </Box>
                             })
                         }
@@ -38,7 +47,15 @@ function ArtGallery() {
                         {
                             ImgURL2.map((data) => {
                                 return <Box key={data.id} component="div" >
-                                    <img style={child} src={data.URL} alt="" />
+                                    <Box sx={{ width: `15em`, height: `15em`, borderRadius: "30px", overflow: 'hidden', margin: "0px 15px" }} >
+                                        <Image src={data.URL}
+                                            width={400}
+                                            height={400}
+                                            objectFit='contain'
+                                            alt='arts'
+                                        />
+                                    </Box>
+                                    {/* <img style={child} src={data.URL} alt="" /> */}
                                 </Box>
                             })
                         }
@@ -54,77 +71,77 @@ export default ArtGallery;
 const ImgURL = [
     {
         id: 1,
-        URL: "img/gif.gif",
+        URL: "/img/gif.gif",
     },
     {
         id: 2,
-        URL: "img/sample2.png",
+        URL: "/img/sample2.png",
     },
     {
         id: 3,
-        URL: "img/sample3.png",
+        URL: "/img/sample3.png",
     },
     {
         id: 4,
-        URL: "img/sample1.png",
+        URL: "/img/sample1.png",
     },
     {
         id: 5,
-        URL: "img/sample2.png",
+        URL: "/img/sample2.png",
     },
     {
         id: 6,
-        URL: "img/sample3.png",
+        URL: "/img/sample3.png",
     },
     {
         id: 7,
-        URL: "img/sample1.png",
+        URL: "/img/sample1.png",
     },
     {
         id: 8,
-        URL: "img/sample3.png",
+        URL: "/img/sample3.png",
     },
     {
         id: 9,
-        URL: "img/sample2.png",
+        URL: "/img/sample2.png",
     },
 ];
 
 const ImgURL2 = [
     {
         id: 1,
-        URL: "img/sample3.png",
+        URL: "/img/sample3.png",
     },
     {
         id: 2,
-        URL: "img/gif.gif",
+        URL: "/img/gif.gif",
     },
     {
         id: 3,
-        URL: "img/sample1.png",
+        URL: "/img/sample1.png",
     },
     {
         id: 4,
-        URL: "img/sample2.png",
+        URL: "/img/sample2.png",
     },
     {
         id: 5,
-        URL: "img/sample1.png",
+        URL: "/img/sample1.png",
     },
     {
         id: 6,
-        URL: "img/sample3.png",
+        URL: "/img/sample3.png",
     },
     {
         id: 7,
-        URL: "img/sample1.png",
+        URL: "/img/sample1.png",
     },
     {
         id: 8,
-        URL: "img/sample3.png",
+        URL: "/img/sample3.png",
     },
     {
         id: 9,
-        URL: "img/sample2.png",
+        URL: "/img/sample2.png",
     },
 ];

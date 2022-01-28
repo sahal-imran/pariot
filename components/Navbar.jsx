@@ -1,10 +1,9 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
-import { FiArrowUpRight } from "react-icons/Fi";
-import { BsTwitter } from "react-icons/Bs";
-import { BsDiscord } from "react-icons/Bs";
-import { BsInstagram } from "react-icons/Bs";
+import NorthEastIcon from '@mui/icons-material/NorthEast';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from "react-scroll";
@@ -43,7 +42,7 @@ function Navbar() {
                     sm:2,
                     xs:1
                 }
-            }} ><a id='navLink' href="">Discord<FiArrowUpRight size={20} /></a></Button>
+            }} ><a id='navLink' href="">Discord<NorthEastIcon size={20} /></a></Button>
             <Button variant='text' sx={{
                 fontSize: {
                     sm: "20px"
@@ -55,7 +54,7 @@ function Navbar() {
                     sm:2,
                     xs:1
                 }
-            }} ><a id='navLink' href="">Twitter<FiArrowUpRight size={20} /></a></Button>
+            }} ><a id='navLink' href="">Twitter<NorthEastIcon size={20} /></a></Button>
             <Button variant='text' sx={{
                 fontSize: {
                     sm: "20px"
@@ -67,7 +66,7 @@ function Navbar() {
                     sm:2,
                     xs:1
                 }
-            }} ><a id='navLink' href="">Members Only<FiArrowUpRight size={20} /></a></Button>
+            }} ><a id='navLink' href="">Members Only<NorthEastIcon size={20} /></a></Button>
             <Button variant='text' sx={{
                 fontWeight: 600, textTransform: "capitalize", "&:hover": {
                     background: 'transparent',
@@ -84,13 +83,13 @@ function Navbar() {
             <Fade bottom >
                 <Box component="div" sx={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }} >
                     <Fade bottom cascade>
-                        <a id='nav-Link' href="">Buy on Solanart<FiArrowUpRight size={20} /></a>
+                        <a id='nav-Link' href="">Buy on Solanart<NorthEastIcon size={20} /></a>
                     </Fade>
                     <Fade bottom cascade>
-                        <a id='nav-Link' href="">Buy on MagicEden<FiArrowUpRight size={20} /></a>
+                        <a id='nav-Link' href="">Buy on MagicEden<NorthEastIcon size={20} /></a>
                     </Fade>
                     <Fade bottom cascade>
-                        <a id='nav-Link' href="">Rarities<FiArrowUpRight size={20} /></a>
+                        <a id='nav-Link' href="">Rarities<NorthEastIcon size={20} /></a>
                     </Fade>
                     <Fade bottom cascade>
                         <Link
@@ -152,7 +151,7 @@ function Navbar() {
                             fontFamily: "'Balsamiq Sans', cursive",
                             pb: 0,
                             mr: 1
-                        }} ><a className='nav-Link nav-link-social' href=""><BsTwitter size={30} /></a></Button>
+                        }} ><a className='nav-Link nav-link-social' href=""><TwitterIcon sx={{fontSize:'30px'}} /></a></Button>
                         <Button variant='text' sx={{
                             textTransform: "capitalize", "&:hover": {
                                 background: 'transparent',
@@ -160,7 +159,7 @@ function Navbar() {
                             fontFamily: "'Balsamiq Sans', cursive",
                             pb: 0,
                             mr: 1
-                        }} ><a className='nav-Link nav-link-social' href=""><BsDiscord size={30} /></a></Button>
+                        }} ><a className='nav-Link nav-link-social' href=""><InstagramIcon sx={{fontSize:'30px'}} /></a></Button>
                         <Button variant='text' sx={{
                             textTransform: "capitalize", "&:hover": {
                                 background: 'transparent',
@@ -168,7 +167,7 @@ function Navbar() {
                             fontFamily: "'Balsamiq Sans', cursive",
                             pb: 0,
                             mr: 1
-                        }} ><a className='nav-Link nav-link-social' href=""><BsInstagram size={30} /></a></Button>
+                        }} ><a className='nav-Link nav-link-social' href=""><InstagramIcon sx={{fontSize:'30px'}} /></a></Button>
                     </Box>
                 </Box>
             </Fade>

@@ -1,6 +1,6 @@
 import Container from '@mui/material/Container';
 import { Box } from '@mui/system';
-// import Image from 'next/image';
+import Image from 'next/image';
 import Typography from "@mui/material/Typography";
 import Button from '@mui/material/Button';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
@@ -144,25 +144,21 @@ function Wellcome() {
                 <Box component="div" sx={{
                     width: {
                         lg: '50%',
-                        md: '30%'
+                        md: '40%'
                     }, display: "flex", justifyContent: "center", alignItems: "center"
                 }} >
-                    <Box component="div" sx={{
-                        overFlow: "hidden", ml: {
-                            md: 4
-                        },
-                        my: {
-                            md: 0,
-                            xs: 8
-                        }, width: {
-                            lg: "450px",
-                            md: "400px",
-                            xs: "auto"
-                        }
-                    }} >
-                        <Zoom cascade>
-                            <img style={{ width: "100%", borderRadius: '50%' }} src="img/gif.gif" alt="" />
-                        </Zoom>
+                    <Box sx={{ ml:{
+                        md:8
+                    },mt:{
+                        md:0,
+                        xs:8
+                    },borderRadius: "50%", overflow: 'hidden' }} >
+                        <Image src={"/img/gif.gif"}
+                            width={500}
+                            height={500}
+                            objectFit='contain'
+                            alt='Gif'
+                        />
                     </Box>
                 </Box>
             </Container>
